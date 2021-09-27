@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Pemula</string>
+    <string name="list_pulau">List Pulau</string>
+    <string name="profil">Profil</string>
+</resources>

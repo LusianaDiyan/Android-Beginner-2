@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lusiana Diyan Ningrum - 2210181051"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 Teknik Komputer B"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_margin="2dp">
+                        <ViewFlipper
+                            android:id="@+id/viewFlipper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/p" />
+
+                            <ImageView
+                                style="@style/photoStyle"
+                                android:src="@drawable/p1" />
+
+                            <ImageView
+                                style="@style/photoStyle"
+                                android:src="@drawable/p2" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/p3" />
+
+                            <ImageView
+                                style="@style/photoStyle"
+                                android:src="@drawable/p4" />
+
+                            <ImageView
+                                style="@style/photoStyle"
+                                android:src="@drawable/p5" />
+
+                            <ImageView
+                                style="@style/photoStyle"
+                                android:src="@drawable/p6" />
+
+                            <ImageView
+                                style="@style/photoStyle"
+                                android:src="@drawable/p7" />
+                        </ViewFlipper>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp">
+                        <ViewFlipper
+                            android:id="@+id/viewFlipper_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp">
+                            <TextView
+                                style="@style/nameStyle"
+                                android:text="Lusiana Diyan"/>
+                            <TextView
+                                style="@style/nameStyle"
+                                android:text="Deka"/>
+                            <TextView
+                                style="@style/nameStyle"
+                                android:text="Dinda"/>
+                            <TextView
+                                style="@style/nameStyle"
+                                android:text="Chofifah"/>
+                            <TextView
+                                style="@style/nameStyle"
+                                android:text="Tedy"/>
+                            <TextView
+                                style="@style/nameStyle"
+                                android:text="CJ"/>
+                            <TextView
+                                style="@style/nameStyle"
+                                android:text="Cahyo"/>
+                            <TextView
+                                style="@style/nameStyle"
+                                android:text="Wafiq"/>
+                        </ViewFlipper>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,2 @@
+rootProject.name='appl2'
+include ':app'

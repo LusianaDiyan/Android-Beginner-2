@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="applusiana.surabayafindplace.MainActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hospital"
+        android:id="@+id/hospital"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="onHospitalClick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hotel"
+        android:id="@+id/hotel"
+        android:layout_marginRight="22dp"
+        android:layout_alignTop="@id/hospital"
+        android:layout_alignParentRight="true"
+        android:onClick="onHotelClick" />
+
+    <TextView
+        android:id="@+id/txtHospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hospital"
+        android:layout_below="@+id/hospital"
+        android:text="Rumah Sakit"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hotel"
+        android:layout_below="@+id/hospital"
+        android:text="Hotel"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ImageButton
+        android:src="@drawable/atm"
+        android:id="@+id/atm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtHospital"
+        android:layout_below="@+id/txtHospital"
+        android:layout_marginTop="14dp"
+        android:onClick="onAtmClick"/>
+
+    <TextView
+        android:id="@+id/txtATM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atm"
+        android:layout_alignLeft="@+id/atm"
+        android:text="ATM"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bengkel"
+        android:id="@+id/bengkel"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@id/txtHotel"
+        android:layout_alignRight="@+id/txtHotel"
+        android:layout_alignParentRight="true"
+        android:onClick="onBengkelClick"/>
+
+    <TextView
+        android:id="@+id/txtBengkel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bengkel"
+        android:layout_below="@+id/bengkel"
+        android:text="Bengkel"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exit"
+        android:id="@+id/exit"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@id/txtBengkel"
+        android:layout_alignRight="@+id/txtBengkel"
+        android:layout_alignParentRight="true"
+        android:onClick="onExitClick"/>
+
+    <TextView
+        android:id="@+id/txtExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exit"
+        android:layout_below="@+id/exit"
+        android:text="Exit"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</RelativeLayout>
